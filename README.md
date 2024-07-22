@@ -15,13 +15,18 @@ pip install git+https://github.com/yourusername/metadata_updater.git
 ## Usage
 Before use,
 - The file structure should look like this:
-    <album folder>.
-    --- CD1
-    --- CD2
-    --- CD3
+  ```
+    <album folder>
+      ├─ CD1
+      ├─ CD2
+      ├─ CD3
+  ```
 - Please keep the file names as they are ripped:
+  ```
     <track number> track <track number>.mp3
+  ```
 
+In Cmd or Terminal
 ``` shell
 dracula <folder_path> [image_path]
 ```
