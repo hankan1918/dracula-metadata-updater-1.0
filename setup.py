@@ -1,15 +1,15 @@
 from setuptools import setup
 
 setup(
-    name="dracula-metadata-updater",
-    version="1.0",
-    py_modules=["dracula.py"],
+    name="dracula-metadata-update",
+    version="1.1.6",
+    py_modules=["dracula"],
     install_requires=[
         "mutagen",
     ],
     entry_points={
         'console_scripts':[
-            'dracula_=dracula:main',
+            'dracula=dracula:main',
         ],
     },
     author="Hankan1918",

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: dracula-metadata-updater
-Version: 1.0
+Name: dracula-metadata-update
+Version: 1.1.6
 Summary: A script to update metadata of 뮤지컬 드라큘라(Dracula) OST 〈10TH ANNIVERSARY CAST RECORDING〉
 Author: Hankan1918
 Classifier: Programming Language :: Python :: 3

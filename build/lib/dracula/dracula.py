@@ -56,7 +56,7 @@ def update_mp3_metadata(mp3_file, track, title, artist, album, year, genre, disc
     except Exception as e:
         print(f"Failed to update {mp3_file}: {e}")
 
-def main():
+def main(folder_path, album_name, image_path=None):
     cd_tracks = {
         '1': [
             ("01", "프롤로그(Prologue)", "VAMPIRE SLAVE, ENSEMBLE"),
@@ -138,17 +138,6 @@ def main():
         ]
     }
 
-    if len(sys.argv) < 2:
-        print("Usage: python update_metadata.py <folder_path> [image_path]")
-        sys.exit(1)
-
-    folder_path = sys.argv[1]
-    image_path = sys.argv[2] if len(sys.argv) > 2 else None
-    album_name = "드라큘라 10주년 스튜디오 OST"
-
-    print(folder_path, image_path, album_name)
-
-
     # Loop through CD tracks and update metadata
     for cd_number, tracks in cd_tracks.items():
         for track, title, artist in tracks:
@@ -167,6 +156,3 @@ def main():
                 cd_number,
                 image_path
             )
-
-if __name__ == "__main__":
-    main()
